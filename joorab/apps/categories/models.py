@@ -5,14 +5,13 @@ from joorab.apps.core.models import (
     CreationModificationDateBase,
 )
 
-from joorab.apps.core.utils import upload_to
-
+from .utils import categories_upload_to
 
 class MainCategory(SeoTagsBase, CreationModificationDateBase, models.Model):
     title = models.CharField(max_length=512)
     slug = models.SlugField(allow_unicode=True)
     image = models.ImageField(
-        upload_to=upload_to(obj_type="categories/main/"),
+        upload_to=categories_upload_to,
         blank=True,
         null=True,
     )
@@ -27,7 +26,7 @@ class Category(SeoTagsBase, CreationModificationDateBase, models.Model):
     title = models.CharField(max_length=512)
     slug = models.SlugField()
     image = models.ImageField(
-        upload_to=upload_to(obj_type="categories/subs/"),
+        upload_to=categories_upload_to,
         blank=True,
         null=True,
     )

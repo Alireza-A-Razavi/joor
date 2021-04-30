@@ -15,11 +15,23 @@ Including another URLconf
 """
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.views.generic import TemplateView
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = i18n_patterns(
     path('', TemplateView.as_view(template_name="index.html")),
     path('admin/', admin.site.urls),
+
+    path('', include('joorab.apps.pages.urls', namespace="main")),
+    # path('', include('joorab.apps.categories.urls', namespace="categories")),
+    # path('', include('joorab.apps.products.urls', namespace="products")),
 )
+
+
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

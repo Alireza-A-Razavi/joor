@@ -7,10 +7,3 @@ def categories_upload_to(instance, filename):
     base, extension = os.path.splitext(filename)
     extension = extension.lower()
     return f"categories/{now:%Y/%m}/{instance.pk}{extension}"
-
-
-def products_upload_to(instance, filename):
-    now = timezone_now()
-    base, extension = os.path.splitext(filename)
-    extension = extension.lower()
-    return f"products/{now:%Y/%m}/{instance.pk}{extension}"

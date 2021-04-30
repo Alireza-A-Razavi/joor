@@ -10,14 +10,14 @@ from joorab.apps.core.models import (
     CreationModificationDateBase,
 )
 
-from joorab.apps.core.utils import upload_to
+from .utils import products_upload_to
 
 class Product(SeoTagsBase, CreationModificationDateBase, models.Model):
     category = models.ForeignKey('categories.Category', on_delete=models.CASCADE)
     title = models.CharField(max_length=512)
     slug = models.SlugField(allow_unicode=True)
     image = models.ImageField(
-        upload_to=upload_to(obj_type="products"),
+        upload_to=products_upload_to,
         blank=True
     )
     alt_name = models.CharField(max_length=512)
@@ -35,7 +35,7 @@ class Product(SeoTagsBase, CreationModificationDateBase, models.Model):
 
 
 class SliderImage(models.Model):
-    image = models.ImageField(upload_to=upload_to)
+    image = models.ImageField(upload_to=products_upload_to)
     alt_name = models.CharField(max_length=512)
     object_id = models.PostitiveIntegerField()
     content_type = models.ForeignKey(

@@ -74,7 +74,7 @@ INSTALLED_APPS = [
     # third-party
     # ...
     # local
-    # ...
+    'joorab.apps.categories.apps.CategoriesConfig',
 ]
 
 MIDDLEWARE = [
@@ -130,8 +130,8 @@ LOCALE_PATHS = [
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'joorab', 'site_static'),
-    BASE_DIR / 'joorab' / 'site_static'
+    # os.path.join(BASE_DIR, 'joorab', 'site_static'),
+    BASE_DIR / 'joorab' / 'site_static',
 ]
 
 timestamp = get_git_changeset_timestamp(BASE_DIR)

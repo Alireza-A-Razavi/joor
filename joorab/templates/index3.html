@@ -1,75 +1,8 @@
-{% extends "base.html" %}
-{% load static %}
-{% block title%}به جوراب سایت ما خوش آمدی{% endblock title %}
-{% block style %}
-  <link href="{% static 'site/css/carousel.rtl.css' %}" rel="stylesheet">
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-{% endblock style %}
-{% block content %}
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+  <body>
+<main>
 
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>بهترین قیمت </h1>
-            <p>ادعای بهترین قیمت را داریم ازآن جایی که تولید کننده و فروشنده اجناسمان هستیم</p>
-            <p><a class="btn btn-lg btn-primary" href="#">همین الان خرید کنید</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
 
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>انواع طرح ها و نقشه ها</h1>
-            <p>جوراب ها و دستکش های ما با بهرتین فلان و فلان </p>
-            <p><a class="btn btn-lg btn-primary" href="#">مشاهده بیشتر</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>خرید عمده</h1>
-            <p>فروشنده گان و بنک داران محترم ما برای شما تحفیف ویژه ای در نظر گرفته ایم</p>
-            <p><a class="btn btn-lg btn-primary" href="#">خرید کنید</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">قبلی</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">بعدی</span>
-    </button>
-  </div>
 
 
   <!-- Marketing messaging and featurettes
@@ -83,23 +16,23 @@
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-        <h2 class="mt-2">ضمانت تحویل</h2>
-        <p>محصولات ما با ضمانت عرضه می شوند و در صورت نیاز خرید حضوری نیز امکان پذیر است</p>
-        <!-- <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p> -->
+        <h2>عنوان</h2>
+        <p>ان وتم عجّل الأجل, قبل نتيجة المشترك بـ, أي جعل جورج أوزار المسرح. أن وإعلان الساحل تلك, مكن ان استبدال الباهضة التكاليف. الى ماذا اليميني الحكومة في, إجلاء نتيجة قبل تم. مساعدة بولندا، أي هذه الحكم.</p>
+        <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-        <h2 class="mt-2">قیمت همکاران</h2>
-        <p>همکاران و فروشندگان محترم با ثبت نام در سایت می توانید از تخفیف ویژه همکاری با ما برخوردار شوید</p>
-        <!-- <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p> -->
+        <h2>عنوان</h2>
+        <p>هو أخر إتفاقية الدولارات الأوروبيّون, ثانية طوكيو و به،, ونتج أعمال مما أم. عن الا يونيو أفريقيا, السيطرة التقليدي ومن ٣٠. هو الغالي الإتفاقية ويكيبيديا، مكن, و الى هُزم اعتداء وايرلندا. وقبل بمباركة الأوروبيّون عن فقد, بتحدّي والفلبين ما كلا.</p>
+        <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-        <h2 class="mt-2">قیمت تولید</h2>
-        <p>شرکت پیک نیک تولید کننده منسوجات و عرضه کننده مستقیم آن ها است از این رو قیمت ارائه محصولات برای شما عزیزان مناسب است</p>
-        <!-- <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p> -->
+        <h2>عنوان</h2>
+        <p>غير عن الثقيل وسمّيت الأوضاع, لم تاريخ بالحرب للسيطرة حين, دار اللا تطوير تم. الى بشرية اليابان في. أما الشهيرة الإثنان وايرلندا ما, لإعلان واشتدّت و مدن. في غير والحزب للسيطرة الإكتفاء. ثانية الكونجرس الا من, جُل ٣٠ وبداية الشرقية.</p>
+        <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -151,6 +84,17 @@
 
   </div><!-- /.container -->
 
-{% endblock content %}
 
   <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">عد إلى الأعلى</a></p>
+    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">خصوصية</a> &middot; <a href="#">شروط</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+</html>
