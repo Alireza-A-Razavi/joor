@@ -135,7 +135,7 @@ STATICFILES_DIRS = [
 ]
 
 timestamp = get_git_changeset_timestamp(BASE_DIR)
-STATIC_URL = f'/static/{timestamp}/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
